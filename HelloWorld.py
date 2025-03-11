@@ -1,3 +1,4 @@
+import fibo
 # https://py-tutorial-de.readthedocs.io/de/python-3.3/introduction.html
 the_earth_is_flat = True
 if the_earth_is_flat:
@@ -41,27 +42,9 @@ for num in range(2, 10):
 # Funktionen definieren
 # Die erste Anweisung des Funktionskörpers kann auch ein Zeichenkettenliteral sein, ein so genannter Dokumentationsstring der Funktion, auch Docstring genannt.
 # mehr zu Docstrings: https://py-tutorial-de.readthedocs.io/de/python-3.3/controlflow.html#tut-docstrings
-def fib(n):
-    """Print the fibonacci series up to n."""
-    a, b = 0, 1
-    while a < n:
-        print(a, end=" ")
-        a, b=b, a+b
-    print()
-
 # Funktion aufrufen:
-fib(2000)
-
-def fib2(n):    # gibt die Fibonacci-Folge bis n zurück
-    """Returns a list containing the fibonacci series up to n."""
-    result = list()
-    a, b = 0, 1
-    while a<n:
-        result.append(a)
-        a, b=b, a+b
-    return result
-
-f100 = fib2(100)
+fibo.fib(2000)
+f100 = fibo.fib2(100)
 print(f100)
 
 # Funktionssparameter erzeugt Dictionary
