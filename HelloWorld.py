@@ -26,3 +26,27 @@ for n in range(2, 10):
             break
     else:
         print (n, "is a prime number")
+
+# continue gibt's auch im C#
+for num in range(2, 10):
+    if num % 2 == 0:
+        print("Found even number", num)
+        continue
+    print ("Found odd number", num)
+
+# pass macht nichts
+#while True:
+#   pass    # Warten auf Strg+C
+
+# Funktionen definieren
+
+def fib(n):
+    """Print the fibonacci series up to n."""
+    a, b = 0, 1
+    while a < n:
+        print(a, end=" ")
+        a, b=b, a+b
+    print()
+
+# Funktion aufrufen:
+fib(2000)
