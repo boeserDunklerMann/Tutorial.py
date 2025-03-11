@@ -39,7 +39,8 @@ for num in range(2, 10):
 #   pass    # Warten auf Strg+C
 
 # Funktionen definieren
-
+# Die erste Anweisung des Funktionskörpers kann auch ein Zeichenkettenliteral sein, ein so genannter Dokumentationsstring der Funktion, auch Docstring genannt.
+# mehr zu Docstrings: https://py-tutorial-de.readthedocs.io/de/python-3.3/controlflow.html#tut-docstrings
 def fib(n):
     """Print the fibonacci series up to n."""
     a, b = 0, 1
