@@ -89,3 +89,13 @@ queue.append("Chrysoula")   # Chrissy auch
 queue.popleft() # der Erste geht
 queue.popleft() # noch einer geht
 print (queue)
+
+# Tupel bestehen aus mehreren Komma-getrennten Werten
+t = 1234, 54321, "qwertz"
+print(t[0])
+print(t)
+# sie können verschachtelt werden:
+u = t, (1, 2, 3, 4, 5)
+print(u)
+# Tupel sind immutable
+t[0]=8888 # macht Bumm!
