@@ -1,4 +1,5 @@
-import fibo
+from fibo import fib, fib2
+
 # https://py-tutorial-de.readthedocs.io/de/python-3.3/introduction.html
 the_earth_is_flat = True
 if the_earth_is_flat:
@@ -43,8 +44,9 @@ for num in range(2, 10):
 # Die erste Anweisung des Funktionskörpers kann auch ein Zeichenkettenliteral sein, ein so genannter Dokumentationsstring der Funktion, auch Docstring genannt.
 # mehr zu Docstrings: https://py-tutorial-de.readthedocs.io/de/python-3.3/controlflow.html#tut-docstrings
 # Funktion aufrufen:
-fibo.fib(2000)
-f100 = fibo.fib2(100)
+fib(2000)
+fib(2000)
+f100 = fib2(100)
 print(f100)
 
 # Funktionssparameter erzeugt Dictionary
