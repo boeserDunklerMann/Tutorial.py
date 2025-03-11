@@ -63,3 +63,20 @@ def fib2(n):    # gibt die Fibonacci-Folge bis n zurück
 
 f100 = fib2(100)
 print(f100)
+
+# Funktionssparameter erzeugt Dictionary
+def cheese_shop(kind, *arguments, **keywords):
+    print("-- Haben Sie", kind, "?")
+    print("-- Sorry, ", kind, "ist gerade aus.")
+    for arg in arguments:
+        print(arg)
+    print("-" * 40)
+    keys = sorted(keywords.keys())
+    for kw in keys:
+        print (kw, ":", keywords[kw])
+
+cheese_shop("Limburger", "Der ist sehr flüssig, mein Herr",
+            "Der ist wirklich SEHR flüssig",
+            shopkeeper="Michael Palin",
+            client="John Cleese",
+            sketch="Cheese Shop Sketch")
