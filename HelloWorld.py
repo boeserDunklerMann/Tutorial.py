@@ -98,4 +98,20 @@ print(t)
 u = t, (1, 2, 3, 4, 5)
 print(u)
 # Tupel sind immutable
-t[0]=8888 # macht Bumm!
+# t[0]=8888 # macht Bumm!
+a, b, c = t # tupel auspacken
+print(c)
+
+# Mengen (sets) ist eine ungeordnete Sammlung ohne doppelte Elemente
+basket = { "Apfel", "Orange", "Apfel", "Birne", "Orange", "Banane"}
+print(basket)   # Duplikate sind weg
+print('Orange' in basket)   # Schnelles testen auf Contains
+print("Zwiebel" in basket)
+a = set("abacadabra")
+b = set("alacazam")
+print(a)        # {'d', 'a', 'b', 'c', 'r'}
+print(a - b)    # {'d', 'r', 'b'}
+print(a | b)    # in a oder b
+print(a & b)    # sowohl in a, als auch in b
+print(a ^ b)    # entweder in a oder b
+
