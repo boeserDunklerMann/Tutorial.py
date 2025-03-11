@@ -71,7 +71,7 @@ def cheese_shop(kind, *arguments, **keywords):
     for arg in arguments:
         print(arg)
     print("-" * 40)
-    keys = sorted(keywords.keys())
+    keys = sorted(keywords.keys())  # Reihenfolge wäre ssonst undefiniert
     for kw in keys:
         print (kw, ":", keywords[kw])
 
