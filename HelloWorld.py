@@ -115,3 +115,21 @@ print(a | b)    # in a oder b
 print(a & b)    # sowohl in a, als auch in b
 print(a ^ b)    # entweder in a oder b
 
+# Dictionaries (Key-Value-Pairs)
+tel = {'jack': 1234, 'ich': 800123400}
+tel['guido'] = 4711
+print(tel)
+del tel['ich']
+tel['bro']=4711
+print(tel)
+list(tel.keys())
+sorted(tel.keys())
+'guido' in tel
+'ich' in tel
+for k, v in tel.items():
+    print(k, v)
+for index, value in enumerate(['tic', 'tac', 'toe']):
+    print(index, value)
+basket2 = { "Apfel", "Orange", "Apfel", "Birne", "Orange", "Banane"}
+for fruit in sorted(basket2):
+    print(fruit)
