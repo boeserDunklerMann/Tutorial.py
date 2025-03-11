@@ -80,3 +80,12 @@ cheese_shop("Limburger", "Der ist sehr flüssig, mein Herr",
             shopkeeper="Michael Palin",
             client="John Cleese",
             sketch="Cheese Shop Sketch")
+
+#Benutzung von Listen als Queue
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])  # die drei sind schon da
+queue.append("André")       # André kommt hinzu
+queue.append("Chrysoula")   # Chrissy auch
+queue.popleft() # der Erste geht
+queue.popleft() # noch einer geht
+print (queue)
