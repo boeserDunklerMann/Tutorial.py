@@ -51,3 +51,15 @@ def fib(n):
 
 # Funktion aufrufen:
 fib(2000)
+
+def fib2(n):    # gibt die Fibonacci-Folge bis n zurück
+    """Returns a list containing the fibonacci series up to n."""
+    result = list()
+    a, b = 0, 1
+    while a<n:
+        result.append(a)
+        a, b=b, a+b
+    return result
+
+f100 = fib2(100)
+print(f100)
