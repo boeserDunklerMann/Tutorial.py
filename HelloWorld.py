@@ -118,3 +118,24 @@ for index, value in enumerate(['tic', 'tac', 'toe']):
 basket2 = { "Apfel", "Orange", "Apfel", "Birne", "Orange", "Banane"}
 for fruit in sorted(basket2):
     print(fruit)
+# lies hier weiter: kaptiel übersprungen
+# https://py-tutorial-de.readthedocs.io/de/python-3.3/modules.html#pakete
+
+# Ausgabeformatierung
+s = 'Hello World!'
+str(s)
+repr(s)
+str(1/7)
+x = 10 * 3.25
+y = 200 * 200
+s = 'Der Wert von x ist ' + repr(x) + ', und y ist ' + repr(y) + '...'
+print (s)
+print('{0} and {1}'.format('André', "Chrysoula"))
+print('{1} and {0}'.format('André', "Chrysoula"))
+print('12'.zfill(5))
+print('Dieses {Speise} ist {Adjektiv}'.format(Speise='Tote Oma', Adjektiv='sehr lecker'))
+import math
+print('Der wert von PI ist {}'.format(math.pi))
+print('Der wert von PI ist {!r}'.format(math.pi))
+print('Der wert von PI ist {0:.3f}'.format(math.pi))
+# more info: http://docs.python.org/3.3/library/string.html#formatstrings
