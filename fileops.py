@@ -23,5 +23,5 @@ tmp.closed
 import pickle
 f = open("D:\\git\\temp\\pickle.txt", "w")
 basket = { "Apfel", "Orange", "Apfel", "Birne", "Orange", "Banane"}
-pickle.dump(basket, f) # das geht aber so nicht
+#pickle.dump(basket, f) # das geht aber so nicht
 f.close()
